@@ -1,0 +1,37 @@
+.contenedorTabla{
+
+    background: #e1eec3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f78742, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f78742, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ground: linear-gradient(to right, #f78742, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablaEncontrados{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 50px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 2px #fa6a11;
+    
+}
+
+tr:hover{
+    background-color: #eb9757 ;
+}
+
+tr {
+    cursor: pointer;
+}

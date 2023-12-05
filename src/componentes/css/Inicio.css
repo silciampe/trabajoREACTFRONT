@@ -1,0 +1,69 @@
+*{
+    font-family: 'Amarante', serif;
+    font-family: 'Borel', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Martian Mono', monospace;
+}
+
+.bienvenida {
+    color: #f78742;
+    padding-left: 250px;
+    padding-top: 50px;
+    display: inline;
+    
+}
+.logo2 {
+    padding-left: 25px;
+    padding-top: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+.PacienteNuevo{
+
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    padding-left: 17px;
+}
+
+.BuscarPaciente{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    padding-left: 15px;
+}
+.contenedorCirculos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.circulo1{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 100px;
+   
+}
+
+.circulo2{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 100px;
+    background-color: aqua;
+   
+}
+
+.palabras{
+    display: flex;
+    justify-content: space-evenly;
+    color: #f78742;
+
+}
