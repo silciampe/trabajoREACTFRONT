@@ -3,6 +3,9 @@ import './css/Nuevo.css'
 import { useState } from 'react';
 import axios from 'axios'; 
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom'
+
+
  function Nuevo() {
 
       const [ nombre, setNombre ] = useState('');
@@ -12,6 +15,7 @@ import Swal from 'sweetalert2';
       const [ medicacionActual, setMedicacionActual ] = useState('');
       const [ laboratorios, setLaboratorios ] = useState('');
       const [ pedidoRecetas, setPedidoRecetas ] = useState('');
+      
 
       const handleSubmit = async (e) =>{
             e.preventDefault();
@@ -24,7 +28,7 @@ import Swal from 'sweetalert2';
             console.log(`Pedido de recetas: ${pedidoRecetas}`)
 
             try {
-                  const enviarDatos = await axios.post( 'http://localhost:8080/users/nuevo', {
+                  const enviarDatos = await axios.post( 'http://localhost:8080/pacientes/nuevo', {
                         nombre,
                         fechaNac ,
                         telefono,
@@ -36,13 +40,10 @@ import Swal from 'sweetalert2';
                   } )
 
                   console.log('respuesta: ', enviarDatos.data);
-           /*        setNombre('');
-                  setFechaNac('');
-                  setTelefono('');
-                  setMotivoConsulta('');
-                  setMedicacionActual('');
-                  setLaboratorios('');
-                  setPedidoRecetas(''); */
+        
+                  mostrarAlerta();
+
+                 
                   
             } catch (error) {
                   console.log(`Tenemos un error en: ${error}`);
@@ -140,7 +141,8 @@ import Swal from 'sweetalert2';
           </div>  
           <button type='submit' onClick={mostrarAlerta}>Agregar Paciente</button>    
         </div>
-      </form>    
+      </form>   
+      <button className='botonParaIrPrincipal'><Link style={{color: 'white', textDecoration: 'none'}} to={'/Inicio'} >Volver a Principal</Link></button> 
     </div>
   )
 }

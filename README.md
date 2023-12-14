@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+#HISTOTAL: Trabajo realizado como parte del curso  "Programador Web Avanzado", UTN.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Es una aplicación que está pensada para que sea utilizada por profesionales de la salud; en donde el mismo puede cargar, visualizar, cambiar y eliminar pacientes.
 
-## Available Scripts
+#Instrucciones:
+Para poder ingresar a la aplicación se deberá primeramente registrarse como usuario. En el caso que ya se encuentre registrado, con realizar el loguin pertinente con email y password es suficiente.
 
-In the project directory, you can run:
+#Partes de la aplicación
 
-### `npm start`
+El trabajo contempla tanto el Front como el Back de la presente aplicación.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FRONT:
+- El Front fue realizado con la libreria REACT, de dicha librería se utilizaron algunos Hooks (Use State, UseEffect)
+-Se utilizo la libreria AXIOS, para realizar operaciones HTTP
+-El paquete REACT-ROUTER-DOM se utilizó para manejar los distintos ruteos  de los componentes
+-Se utilizó la librería SWEETALERT2 para crear ventanas emergentes 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+BACK:
+-La base de datos se encuentra en MongoDB y se utilizó Mongoose para manejar las consultas a dicha Base de Datos
+-Se utilizó el módulo DOTENV para generar distintas variables de entorno, las cuales se pueden ocultar como medida de seguridad
+-Se utilizó la librería BCRYPT para encriptar las contraseñas antes de guardalas en la base de datos
+-Se utilizó el paquete de CORS para el manejo de 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyecto realizado por: Silvina Paola Ciampechini      
+silciampe@gmail.com
+https://www.linkedin.com/in/silvina-ciampechini-b5902457/
